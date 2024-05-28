@@ -1,0 +1,213 @@
+/* Sets the margin above the webpage to extend away from top*/
+*
+{
+    margin: 100;
+    padding: 10;
+    /* Ensures padding and border are included in element's total width and height */
+    box-sizing: border-box; 
+}
+
+/* General body styles(backgrounds, fonts, text, ect) */
+body 
+{
+    /*Changes the background of the website into the gradient .jpg image*/
+    background-image: url('ptrbackground.jpg');
+    color: #666666; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Wrapper styles to center and constrain width */
+#wrapper 
+{
+    /* Constrains the width of the wrapper to 80% of the viewport */
+    width: 80%; 
+    /* Sets a minimum width of 600px */
+    min-width: 600px;
+    /* Centers the wrapper horizontally */ 
+    margin: 0 auto; 
+}
+
+/* Top Header Style */
+header 
+{
+    /* Centers the text */
+    text-align: center; 
+    /* Dark blue background color to match the image and creates gradient effect */
+    background-color: #000032; 
+    height: 120px; 
+    display: flex;
+    align-items: center; 
+}
+
+/* Top Header details with sunset image */
+header h1 
+{
+    margin: 0;
+    padding: 10px; 
+    /* Uses the sunset image and dark blue color */
+    background: url('sunset.jpg') no-repeat top right, #000032;
+    /* Ensures the image fits within the header */ 
+    background-size: contain; 
+    font-family: Georgia, "Times New Roman", serif; 
+    text-align: left;
+    /* White text color for the header */
+    color: white; 
+    /* Ensures that the image makes up the header width wise */
+    width: 100%; 
+     /* Ensures that the image makes up the header height wise */
+    height: 100%;
+    display: flex;
+    /* Vertically centers the text */
+    align-items: center; 
+}
+
+/* Navigation bar styles */
+nav 
+{
+    /* Sets the width of the navigation bar */
+    width: 200px;
+    /* Floats the navigation bar to the left */ 
+    float: left; 
+    /* Makes the color of the navigaation bar a blue similar to the example image */
+    background-color: #90C8E3;
+    /* Adds padding inside the navigation bar */ 
+    padding: 10px; 
+    /* Extends the navigation bar to match the height of the content page */
+    height: 81.5vh; 
+}
+
+nav ul 
+{
+    /* Removes the default list styling */
+    list-style: none; 
+    /* Increases font size */
+    font-size: 1.2em; 
+}
+
+nav a 
+{
+    /* Removes underlines from links */
+    text-decoration: none; 
+    /* Makes the text a dark blue color */
+    color: #00569f;
+    /* Makes the links block elements */ 
+    display: block;
+    /* Adds padding inside the links */ 
+    padding: 10px; 
+    /* Makes the text bold */
+    font-weight: bold; 
+}
+
+
+nav a:hover 
+{
+    /* White text color on hover */
+    color: #FFFFFF; 
+    /* Darker blue background color on hover */
+    background-color: #344873; 
+}
+
+/* Main content area styles */
+#content 
+{
+    /* Adds padding inside the content area */
+    padding: 20px; 
+    /* Makes the background of the content area while */
+    background-color: white; 
+    overflow: hidden; 
+}
+
+h2 
+{
+    /* Makes the header a light blue*/
+    color: #3399CC;
+    font-family: Georgia, "Times New Roman", serif; 
+    margin-bottom: 10px; 
+}
+
+/* Styling for the resort name only */
+.resort 
+{
+    /* Changes the color of the resort name in the main content area a different color, specifically blue*/
+    color: #3399CC; 
+    /* Changes the resort name to a bolder font */
+    font-weight: bold; 
+}
+
+/* List styles with custom bullet */
+ul 
+{
+    /* Changes the bullet points to the image provided*/
+    list-style-image: url('marker.gif'); 
+    margin-left: 20px; 
+    padding-left: 10px; 
+}
+
+ul li 
+{
+    /* Adds a top and bottom margin to the list items */
+    margin: 10px 0; 
+}
+
+/* Contact section styles */
+#contact 
+{
+    /* Slightly reduces font size */
+    font-size: 90%; 
+    /* Adds top margin */
+    margin-top: 20px; 
+}
+
+#contact .resort
+{
+    /* Light blue text color for resort names in the contact section */
+    color: #3399CC; 
+}
+
+/* Footer styles */
+footer 
+{
+     /* Left aligns the text */
+    text-align: left;
+    position: relative;
+    /*Helps with moving the footer higher into content area*/
+    top: -35px;
+    /* Adds top margin to space it away from content above */
+    padding-left:205px; 
+    font-family: Georgia, "Times New Roman", serif; 
+    /*Makes the font size smaller and fit in the content area*/
+    font-size: smaller;
+    color: #666666; 
+}
+
+/* Helps make the webpage a bit more responsive if the page is smaller*/
+@media screen and (max-width: 600px) 
+{
+    nav 
+    {
+        /* Makes the navigation bar full width */
+        width: 100%; 
+        float: none; 
+        text-align: center; 
+    }
+
+    nav ul 
+    {
+        display: flex;
+        /* Spreads out items evenly */
+        justify-content: space-around; 
+        padding: 0; 
+    }
+
+    nav li 
+    {
+        /* Removes the margin */
+        margin: 0; 
+    }
+
+    #content 
+    {
+        /* Removes the  left margin */
+        margin-left: 0; 
+    }
+}
